@@ -1,0 +1,62 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: rgb(123, 31, 162);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(244, 143, 177);
+    --yellow: rgb(255, 213, 44);
+    --dark: rgb(10, 10, 10);
+}
+
+.side {
+    height: 100vh;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+
+    overflow: hidden;
+    position: absolute;
+}
+
+.side .fancy {
+    font-family: "Lobster", cursive;
+    font-size: 1.3em;
+    line-height: 0.8em;
+}
+
+.side .title {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 8vw;
+    margin: 0 15vw;
+    width: 70vw;
+}
+
+#left-side {
+    background-color: var(--purple);
+    z-index: 2;
+}
+
+#left-side .fancy {
+    color: var(--yellow);
+}
+
+#left-side .title {
+    color: white;
+}
+
+#right-side {
+    background-color: var(--yellow);
+}
+
+#right-side .fancy {
+    color: white;
+}
+
+#right-side .title {
+    color: var(--dark);
+}
+
